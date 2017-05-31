@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="../static/smoothie.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+    <canvas id="mycanvas" width="1000" height="200"></canvas>
+
+    <script type="text/javascript">
+        
+      var chart = new SmoothieChart();
+
+      chart.streamTo(document.getElementById("mycanvas"), 1000);
+
+      // Random data
+      var data = new TimeSeries();
+      
+      var getData = $.get('/data');
+            getData.done(function(data) {
+              var now=data.t;
+                data.append (now, data.d);
+             });
+
+
+      chart.addTimeSeries(data);
+
+    </script>
+  </head>
+  <body style="background-color:#333333">
+
+  </body>
+</html>

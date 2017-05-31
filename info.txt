@@ -1,0 +1,11 @@
+This is the video I based on my flask up to get information from MongoDB:
+https://www.youtube.com/watch?v=oVVpF7bIDAE
+
+This is tutorial how to get mongoDB and Smoothie Chart, but it based on numbers of MongoDB updates/inputs/delitions of actual collection rather than it's information:
+https://www.compose.com/articles/tinkertank-visualizing-mongodb-with-javascript/
+
+This is Smoothie Chart website:
+http://smoothiecharts.org/
+
+Flash folder structure should stay as it is - static/templates:
+http://flask.pocoo.org/docs/0.12/tutorial/folders/
